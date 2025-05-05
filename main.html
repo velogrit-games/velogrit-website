@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeloGrit Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-y: auto;
+        }
+        /* Updated icon styles to use external SVG files */
+        .bluesky-icon {
+            /* No background color here, defined in SVG */
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px; /* Consistent size */
+            height: 24px;
+        }
+        .github-icon {
+            /* No background color here, defined in SVG */
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px; /* Consistent size */
+            height: 24px;
+        }
+        .twitter-icon {
+            /* No background color here, defined in SVG */
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px; /* Consistent size */
+            height: 24px;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .gradient {
+            background-image: linear-gradient(to bottom, #1a1a1a, #323232); /* Darker gradient */
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            height: auto;
+        }
+
+        .game-showcase-image {
+            order: 0; /* Image first */
+            margin-bottom: 20px; /* Add some space below the image */
+            max-width: 80%; /* Limit image width if needed */
+        }
+
+        .game-showcase-video {
+            order: 1; /* Video second */
+            width: 100%;
+            max-width: 80%; /* Limit video width */
+        }
+
+        .game-showcase-description{
+            order: 2;
+            margin-top: 20px;
+            max-width: 80%;
+        }
+
+        /* Repeating Image Border Styles */
+        .repeating-border {
+            background-image: url('border-image.png'); /* Replace with your image path */
+            background-repeat: repeat;
+            height: 64px; /* Adjust height as needed */
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-lime-100 text-lime-800">
+    <div class="min-h-screen flex flex-col">
+        <header class="sticky top-0 z-10 bg-yellow-100/90 backdrop-blur-md py-4 border-b border-lime-800 shadow-md">
+            <div class="container mx-auto px-4 flex justify-center">
+                <div class="flex justify-center">
+                    <img src="VeloGritGamesLogo.png" alt="VeloGrit Games Logo"  width="128" height="128">
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <section class="company-info  p-6 mb-12  flex  md:flex-row items-center">
+                <div class="company-info-text  md:w-1/2">
+                    <h2 class="text-3xl font-semibold mb-4 text-blue-800" style="color: #8bac0f;">About VeloGrit Games</h2>
+                    <p class="text-lg mb-4" style="color: #4b5563;">Velogrit Games is a passionate indie development studio of young and talented individuals. Based in Lexington, Kentucky, we reach out to developers local to the area and use our team to learn and grow to give you the best product we can. We strive to give other peers around us opportunities to experience the industry, and publish something of their own.
+                    </p>
+                </div>
+                <div class="company-info-image md:w-1/2 flex justify-end">
+                    <img src="BotIcon.png" alt="Company Info" class="rounded-md" style="width: 256px;">
+                </div>
+            </section>
+            <div class="repeating-border"></div>
+            <section class="game-showcase flex flex-col md:flex-row items-center gap-8 shadow-lg gradient" >
+                <div class="game-showcase-image md:w-1/2">
+                    <img src="UrumiwristLogoTransparentBackground.png" alt="UrumiWrist" class="w-full" style="width:512">
+                </div>
+                <div class="game-showcase-video md:w-1/2">
+                    <iframe class="w-full aspect-w-16 aspect-h-9 rounded-md shadow-md border border-gray-400" src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" title="[Your Game Title] Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="game-showcase-description md:w-1/2">
+                    <h2 class="text-3xl font-semibold mb-4" style="color: #fac5c5;">UrumiWrist</h2>
+                    <p class="text-lg mb-4" style="color: #d1d5db;">Step into a world of mystery and intrigue in [Your Game Title], a captivating adventure set in a beautifully rendered Victorian-inspired landscape. Unravel a compelling narrative filled with unforgettable characters and challenging puzzles. Explore atmospheric environments brought to life with a distinctive grey, black, and light grey palette, punctuated by striking crimson accents that highlight key elements and create a unique visual experience.</p>
+                    <p class="text-lg mb-4" style="color: #ffffff;">Discover hidden secrets, master unique mechanics, and immerse yourself in a story that will keep you on the edge of your seat. Wishlist or buy [Your Game Title] today!</p>
+                </div>
+            </section>
+            <div class="repeating-border"></div>
+        </main>
+
+        <footer class="bg-yellow-100/90 backdrop-blur-md py-6 border-t border-lime-800">
+            <div class="container mx-auto text-center flex justify-center items-center">
+                <a href="https://bsky.app/profile/velogritgames.bsky.social" target="_blank" rel="noopener noreferrer" class="text-xl text-blue-700 hover:underline mr-6">
+                    <div class="bluesky-icon">
+                        <img src="bluesky-logo.svg" alt="Bluesky Logo" class="icon">
+                    </div>
+                </a>
+                <span class="text-gray-700 mx-6">•</span>
+                <a href="https://github.com/velogrit-wyatt/velogrit-website" target="_blank" rel="noopener noreferrer" class="text-xl text-blue-700 hover:underline mr-6">
+                    <div class="github-icon">
+                        <img src="github-logo.svg" alt="GitHub Logo" class="icon">
+                    </div>
+                </a>
+                <span class="text-gray-700 mx-6">•</span>
+                <a href="https://twitter.com/velogrit95302" target="_blank" rel="noopener noreferrer" class="text-xl text-blue-700 hover:underline mr-6">
+                    <div class="twitter-icon">
+                        <img src="twitter-logo.svg" alt="Twitter Logo" class="icon">
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
